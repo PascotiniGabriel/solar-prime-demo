@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Prime CRM</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/modules/dashboard.css">
+<link rel="stylesheet" href="css/modules/leads.css">
+<link rel="stylesheet" href="css/modules/funil.css">
+<link rel="stylesheet" href="css/modules/conversas.css">
+<link rel="stylesheet" href="css/modules/propostas.css">
+<link rel="stylesheet" href="css/modules/contratos.css">
+<link rel="stylesheet" href="css/modules/agenda.css">
+<link rel="stylesheet" href="css/modules/obras.css">
+<link rel="stylesheet" href="css/modules/estoque.css">
+<link rel="stylesheet" href="css/modules/financeiro.css">
+<link rel="stylesheet" href="css/modules/metas.css">
+<link rel="stylesheet" href="css/modules/marketing.css">
+<link rel="stylesheet" href="css/modules/importar.css">
+<link rel="stylesheet" href="css/modules/config.css">
+<link rel="stylesheet" href="css/modules/assistente.css">
+</head>
+<body>
+<div id="app">
+  <div class="demo-banner">Demonstração &mdash; dados fictícios &middot; <a href="#" id="resetLink">Resetar dados</a></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row"><a class="brand" href="#/inicio" aria-label="Solar Prime CRM"><img class="logo-full logo-light" src="assets/logo.svg" alt="Solar Prime"><img class="logo-full logo-dark" src="assets/logo-white.svg" alt="Solar Prime"><img class="logo-mark" src="assets/logo-mark.svg" alt="Solar Prime"></a><button class="side-toggle" id="sideToggle" aria-label="Recolher menu" title="Recolher menu">&laquo;</button></div>
+      <nav id="sidebarNav" class="nav"></nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <a class="brand brand-m" href="#/inicio"><img class="logo-mark" src="assets/logo-mark.svg" alt="Solar Prime"></a>
+        <button class="search-btn" id="searchBtn" aria-label="Buscar"><span id="searchIcon"></span><span class="search-t">Buscar leads, clientes, módulos...</span><kbd>Ctrl K</kbd></button>
+        <div class="topbar-right">
+          <label class="role-switch"><span class="muted text-sm">Ver como</span><select id="roleSelect"></select></label>
+          <div class="bell-wrap">
+            <button class="btn btn-ghost btn-icon" id="bellBtn" aria-label="Notificações"><span id="bellIcon"></span><span class="bell-dot" id="bellDot"></span></button>
+            <div class="dropdown" id="bellMenu"></div>
+          </div>
+          <button class="btn btn-ghost btn-icon" id="themeBtn" aria-label="Alternar tema"></button>
+          <span class="user-chip" id="userName"></span>
+        </div>
+      </header>
+      <main id="view" class="view"></main>
+    </div>
+  </div>
+  <nav class="bottom-nav" id="bottomNav"></nav>
+</div>
+<div id="toasts"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+<script src="js/modules/dashboard.js"></script>
+<script src="js/modules/leads.js"></script>
+<script src="js/modules/funil.js"></script>
+<script src="js/modules/conversas.js"></script>
+<script src="js/modules/propostas.js"></script>
+<script src="js/modules/contratos.js"></script>
+<script src="js/modules/agenda.js"></script>
+<script src="js/modules/obras.js"></script>
+<script src="js/modules/estoque.js"></script>
+<script src="js/modules/financeiro.js"></script>
+<script src="js/modules/metas.js"></script>
+<script src="js/modules/marketing.js"></script>
+<script src="js/modules/importar.js"></script>
+<script src="js/modules/config.js"></script>
+<script src="js/modules/assistente.js"></script>
+</body></html>

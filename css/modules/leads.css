@@ -1,0 +1,35 @@
+.leads-filters { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.leads-search { width: 100%; }
+.leads-filter-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.leads-filter-row select { flex: 1 1 150px; min-width: 0; }
+.leads-table .leads-row { cursor: pointer; }
+.leads-table .leads-row:hover { background: var(--hover); }
+.leads-cards { display: none; flex-direction: column; gap: 10px; }
+.leads-card { cursor: pointer; margin: 0; }
+.leads-score { display: inline-block; min-width: 30px; text-align: center; padding: 2px 8px; border-radius: 999px; font-weight: 700; font-size: .8rem; }
+.leads-score-hot { background: #22C55E22; color: #16A34A; }
+.leads-score-warm { background: #F59E0B22; color: #D97706; }
+.leads-score-cold { background: #64748B22; color: var(--muted); }
+.leads-title { margin: 0 0 4px; font-size: 1.5rem; }
+.leads-chips { flex-wrap: wrap; gap: 10px; align-items: center; }
+.leads-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.leads-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+.leads-field { display: flex; flex-direction: column; gap: 2px; min-width: 0; word-break: break-word; }
+.leads-kwp { display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 10px; background: var(--hover); color: var(--primary); }
+.leads-kwp b { color: var(--text); }
+.leads-kwp .muted { color: var(--muted); }
+.leads-addint { display: flex; gap: 8px; flex-wrap: wrap; }
+.leads-addint input { flex: 1 1 220px; }
+.leads-ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.leads-handover { background: var(--hover); padding: 12px; border-radius: 10px; line-height: 1.5; }
+.leads-ia-loading { text-align: center; padding: 40px 16px; }
+.leads-spinner { width: 36px; height: 36px; margin: 0 auto 12px; border: 4px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: leads-spin .8s linear infinite; }
+@keyframes leads-spin { to { transform: rotate(360deg); } }
+.leads-form label { display: flex; flex-direction: column; gap: 4px; }
+.leads-dup { display: flex; gap: 8px; padding: 10px 12px; border-radius: 10px; background: #F59E0B22; color: var(--text); border: 1px solid #F59E0B; }
+@media (max-width: 760px) {
+  .leads-table-wrap { display: none; }
+  .leads-cards { display: flex; }
+  .leads-fields { grid-template-columns: 1fr; }
+  .leads-actions .btn { flex: 1 1 45%; justify-content: center; }
+}
